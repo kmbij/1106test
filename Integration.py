@@ -73,7 +73,7 @@ def delete_student():
     delete = cursor.fetchall()
     cursor.execute('DELETE from DB_student WHERE db_student_id=?', (student_id,))
     
-    print ('Following row is delete:', delete)
+    print ('Following rows are delete:', delete)
     conn.commit()
 
 
